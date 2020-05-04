@@ -1,6 +1,12 @@
 ## RTSms
 **A Bash shell script using Twilio SMS API to send out text alerts to pagers and smartphones.**
 
+### Usage
+
+1. Create a contact list file and fill with data: `$ vim contacts.sms` 
+2. Add an exec file permission: `$ chmod +x rtsms.sh`
+3. Run the script: `$ ./rtsms.sh`
+
 ### Message description
 
 - A message segment is up to 153 characters long, if no backticks(``) or Unicode symbols were used.
@@ -28,9 +34,13 @@ Twilio SMS API speed is currently 1 sms per second (default), or 3 sms per secon
 ### Useful references
 
 https://www.twilio.com/docs/glossary/what-sms-character-limit
+
 https://www.twilio.com/docs/usage/troubleshooting/data-types
+
 https://www.twilio.com/docs/usage/twilios-response
+
 https://www.twilio.com/docs/iam/test-credentials
+
 https://www.twilio.com/docs/sms/api
 
 
