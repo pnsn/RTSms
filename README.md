@@ -3,9 +3,14 @@
 
 ### Usage
 
+0. Ensure all the required environment variables are set (below)
 1. Create a contact list file and fill with data: `$ vim contacts.sms` 
-2. Add an exec file permission: `$ chmod +x rtsms.sh`
-3. Run the script: `$ ./rtsms.sh`
+2. Add an exec file permission: `$ chmod +x rtsms.sh` (optional)
+3. Run the script: `$ ./rtsms.sh` (or just `$ bash rtsms.sh`)
+
+### The variables
+
+At a minimum, you need to get your Twilio phone number (SENDER), ACCOUNT_SID and AUTH_TOKEN via Twilio control panel, and define all of them either in your shell environment, or the script itself, or any other file to source. Note that Twilio also provides test credentials for sending HTTP Post requests and logging responses without actual SMS being sent or incurring charges.
 
 ### Message description
 
