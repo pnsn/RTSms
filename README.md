@@ -33,10 +33,16 @@ Check for the logfile.sms in the script's working directory. API responses (incl
 
 ### Pricing and speed
 
-US/Canada costs $0.0075 per 1 SMS/segment sent (+$0.0025/sms if to Verizon or +$0.005/sms to US Cellular, except if sent from a toll-free).
-Twilio SMS API speed is currently 1 sms per second (default), or 3 sms per second if sent from a toll-free number.
+US/Canada costs $0.0075 per 1 SMS segment sent (+$0.0025/sms if to Verizon or +$0.005/sms to US Cellular, except if sent from a toll-free).
+Twilio SMS API speed is currently 1 message segment per second (default), or 3 segments per second if sent from a toll-free number:
+https://support.twilio.com/hc/en-us/articles/115002943027-Understanding-Twilio-Rate-Limits-and-Message-Queues
+Max queue length is 14400 segments or 4 hours, and then they will automatically fail.
 
 ### Useful references
+
+https://www.twilio.com/docs/glossary/what-is-gsm-7-character-encoding
+
+https://www.twilio.com/blog/2017/03/what-the-heck-is-a-segment.html
 
 https://www.twilio.com/docs/glossary/what-sms-character-limit
 
@@ -47,5 +53,4 @@ https://www.twilio.com/docs/usage/twilios-response
 https://www.twilio.com/docs/iam/test-credentials
 
 https://www.twilio.com/docs/sms/api
-
 
